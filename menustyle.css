@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css?family=Caudex');
+
+#vaniermenu 
+{
+  background: #FF0000;
+  border: 10px ridge #B80000;
+  width: auto;
+  height: auto;
+  padding-right: 200px;
+  line-height: 2;
+  display: block;
+  position: relative;
+  font-family: 'Caudex', sans-serif;
+}
+
+
+
+#vaniermenu ul,
+#vaniermenu ul li
+{
+  list-style: none;
+  padding: 0;
+  display: block;
+  position: relative;
+  margin: 0;
+}
+
+
+
+#vaniermenu > ul.open 
+{
+   max-height: 1000px;
+   border-top: 1px solid rgba(110, 110, 110, 0.25);
+}
+
+
+
+#vaniermenu ul:after,
+#vaniermenu:after 
+{
+  content: " ";
+  display: block;
+  font-size: small;
+  clear: both;
+}
+
+
+
+
+#vaniermenu ul li a 
+{
+  text-decoration: underline;
+  display: block;
+  margin: 0;
+}
+
+
+
+
+
+#vaniermenu ul li ul 
+{
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  bottom: auto;
+}
+
+
+
+
+#vaniermenu ul li ul li
+{
+  max-height: 0;
+  position: relative;
+  margin: 10px 10px 10px 10px;
+  background: #000000;
+}
+
+
+
+
+
+
+#vaniermenu ul li ul li.sub-menu:before 
+{
+  display: block;
+  position: absolute;
+  content: "";
+  border: 5px solid transparent;
+  border-left-color: #FFFFFF;
+  z-index: 4;
+  top: 15px;
+  bottom: 15px;
+  right: 15px;
+}
+
+
+
+#vaniermenu.align-right ul li ul li.sub-menu:before 
+{
+  right: auto;
+  left: auto;
+  display: block;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+
+
+
+#vaniermenu ul li ul li a 
+{
+  font-size: 14px;
+  font-weight: 200;
+  text-transform: none;
+  color: #FFFFFF;
+  display: block;
+  width: 170px;
+  height: 20px;
+  padding: 11px 10px 11px 10px;
+}
+
+
+
+
+
+#vaniermenu ul li ul li:hover > a,
+#vaniermenu ul li ul li.active > a 
+{
+  color: #FF0000;
+}
+
+
+
+
+
+#vaniermenu ul li ul li:hover > ul 
+{
+  left: 100%;
+  top: 0;
+  bottom: 0;
+  display: block;
+}
+
+
+
+#vaniermenu ul li ul li:hover > ul > li 
+{
+  max-height: 200px;
+  position: relative;
+  display: block;
+}
+
+
+
+#vaniermenu > ul > li 
+{
+  float: left;
+  display: block;
+}
+
+
+
+
+
+
+#vaniermenu > ul > li:after 
+{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  z-index: 0;
+  background: #CC0000;
+  transition: height 0.7s linear;
+}
+
+
+
+
+
+#vaniermenu > ul > li > a 
+{
+  color: #000000;
+  padding: 15px 80px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+  z-index: 2;
+  position: relative;
+}
+
+
+
+
+
+#vaniermenu > ul > li:hover:after,
+#vaniermenu > ul > li.active:after 
+{
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+#vaniermenu > ul > li:hover > a
+{
+   color: #FFFFFF;
+}
+
+
+
+#vaniermenu > ul > li.active > a
+{
+	background: #FF0000;
+}
+
+
+
+#vaniermenu > ul > li:hover > ul 
+{
+  left: auto;
+  right: auto;
+}
+
+
+
+#vaniermenu > ul > li:hover > ul > li 
+{
+  max-height: 72px;
+  position: relative;
+}
+
+
+
+  #vaniermenu > ul
+  {
+    max-height: 0;
+  }
+  
+  
+  
+  
+  #vaniermenu > ul > li > ul 
+  {
+    width: 100%;
+    display: block;
+  }
+  
+  
+  
+  
+  #vaniermenu.align-left ul li a 
+  {
+    text-align: left;
+  }
+  
+  
+  
+  
+  #vaniermenu > ul > li > ul > li 
+  {
+	height: 100%;
+	width: 100%;
+    display: block;
+  }
+  
+  
+  
+  #vaniermenu.align-right ul ul li a 
+  {
+     text-align: right;
+  }
+  
+  
+  
+  #vaniermenu > ul > li > ul > li > a 
+  {
+    width: 100%;
+    display: block;
+	position: relative;
+  }
+ 
+  
+
+  
+  #vaniermenu.align-center > ul > li 
+  {
+    display: block;
+    position: relative;
+  }
+  
+  
+  
+  
+
